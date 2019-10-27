@@ -1,4 +1,4 @@
-#Guitar Practice Tool
+# Guitar Practice Tool
 - displays notes across a fretboard of up to 23 frets (not including fret 0), 
 dynamically updating the frets to play according to the user's selection
 - user can select one of the 7 chord types or one of the 12 scale types (or 
@@ -26,4 +26,4 @@ Features that could be added:
 - support for more strings (e.g. 7/8/9)
 - support for different tunings (would not support C A G E D system)
 
-Daniel Edwards - 8/8/19
+8/8/19
