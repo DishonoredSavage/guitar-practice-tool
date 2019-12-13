@@ -1,5 +1,9 @@
-# Guitar Practice Tool
-- displays notes across a fretboard of up to 23 frets (not including fret 0), 
+# CAGED System Practice Tool
+
+
+
+## Features
+* displays notes across a fretboard of up to 23 frets (not including fret 0), 
 dynamically updating the frets to play according to the user's selection
 - user can select one of the 7 chord types or one of the 12 scale types (or 
 just have root notes displayed)
