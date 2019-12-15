@@ -10,23 +10,26 @@ void keyPressed() {
     shapes[3] = !shapes[3];
   if (key == 'd' || key == 'D')
     shapes[4] = !shapes[4];   
-  // toggle controls
-  if (key == 'i' || key == 'I')
-    controls = !controls; 
   // increase number of frets (upper bound of 23 not including 0)
   if (key == 'z' || key == 'Z')
     if (numbOfFrets < 23) {
       numbOfFrets++;
       wi = (width - 2*margin)/(numbOfFrets);
-      hi = (height - 5*margin)/(numbOfStrings-1);  
+      hi = (height - 4*margin)/(numbOfStrings-1);  
     }
   // decrease number of frets (lower bound of 3 not including 0)
   if (key == 'x' || key == 'X') 
     if (numbOfFrets > 3) {
       numbOfFrets--; 
       wi = (width - 2*margin)/(numbOfFrets);
-      hi = (height - 5*margin)/(numbOfStrings-1);  
+      hi = (height - 4*margin)/(numbOfStrings-1);  
     }
+  // toggle displaying degree labels
+  if (key == 'l' || key == 'L') 
+    degreeLabels = !degreeLabels;
+  // toggle displaying note labels
+  if (key == 'n' || key == 'N') 
+    noteLabels = !noteLabels;
   // turn off scales and toggle chords
   if (key == '1') {
     muteNonRoots();
@@ -38,6 +41,12 @@ void keyPressed() {
     muteNonRoots();
     type[0] = false;
     type[1] = !type[1];
+  }
+  // turn off chords and scales
+  if (key == '3') {
+    muteNonRoots();
+    type[0] = false;
+    type[1] = false;
   }
   // cycle backwards through chord/scale types
   if (key == '-') {

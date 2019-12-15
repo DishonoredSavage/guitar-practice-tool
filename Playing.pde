@@ -1,11 +1,11 @@
 // calculates and plays absolute fret of note (based on currently selected root and relative fret passed as argument) 
 // if there are more than 11 frets (not including fret 0) to display, the fret of the octave higher note on the same string is also played
-void playNote(int strNumb, int fret, boolean inShapes) {
+void playNote(int strNumb, int fret, boolean inShapes, String deg) {
   int limNote = ((fret+rootOffset) % 12);
   if (limNote <= numbOfFrets) {
-    fretBrd[strNumb].frets[limNote].play(inShapes);  
+    fretBrd[strNumb].frets[limNote].play(inShapes, deg);  
     if ((numbOfFrets >= 12) && (limNote + 12) <= numbOfFrets)
-      fretBrd[strNumb].frets[limNote + 12].play(inShapes);        
+      fretBrd[strNumb].frets[limNote + 12].play(inShapes, deg);        
   }
 }
 

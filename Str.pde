@@ -21,7 +21,14 @@ class Str {
   // and sets fret 0 to open 
   void setupFrets() {
     for (int i = 0; i < frets.length; i++) 
-      frets[i] = new Fret();
+      frets[i] = new Fret(indOfStrTuning(), i);
     frets[0].open = true;
+  }
+  
+  int indOfStrTuning() {
+    for (int i = 0; i < roots.length; i++)
+      if (roots[i] == tuning)
+        return i;
+    return -1;
   }
 }
