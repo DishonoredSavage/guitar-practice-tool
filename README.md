@@ -3,10 +3,10 @@
 ## Version 1.1 (15/12/2019)
 
 ### Changes
-- Remove controls section as this will be displayed on webpage
-- Added degree labels for each note which can be toggled using 'l' or 'L'
-- Added not labels for each fret (except 0 as these already existed) which can be toggled using 'n' or 'N'
-- Changed colours of roots and blues notes to fit better with webpage
+- removed controls section as this will be displayed on webpage
+- added degree labels for each note which can be toggled using 'l' or 'L'
+- added note labels for each fret which can be toggled using 'n' or 'N'
+- changed colours of roots and blues notes to fit better with webpage
 - 'Root: [root]' line now displayed when only roots are being displayed, to remove repeated text (root already appears in chord and scale/mode).  It has been moved to the same line as 'Chord: [chord]' and 'Scale/ Mode: [scale/ mode]' too.
 
 ## Version 1.0 (08/08/2019)
